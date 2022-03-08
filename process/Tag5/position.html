@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    body{
+        background-color:aquamarine;  
+    }
+
+    article {
+        /*ich bin static und diese Angaben haben keinen Einfluss */
+        top: 100px;
+        left: 200px;
+        max-width: 600px;
+        border: 1px solid blue;
+    }
+
+    .box1{
+        position: relative;
+        margin: 10px;
+        padding: 10px;
+        border: 4px double rgb(211, 146, 228);
+    }
+
+    .box2{
+        position: absolute;
+        margin: 20px;
+        border: 4px double rgb(241, 84, 150);
+    }
+
+    .box3{
+        position: fixed;
+        margin: 20px;
+        border: 4px double rgb(241, 84, 150);
+    }
+
+    .box{
+        height: 1000px;
+        background-color: mediumspringgreen;
+    }
+
+    </style>
+    
+</head>
+<body>
+
+    <article>
+        <div class="box3">Header</div>
+    </article>
+    <article>
+        <div class="box1">unendlich
+            <div class="box1">unendlich
+                <div class="box1">unendlich
+                    <div class="box1">unendlich
+                        <div class="box1">unendlich
+                            <div class="box1">unendlich</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="box1">unendlich</div>
+    </article>
+
+    <article>
+        <div class="box2">unendlich
+            <div class="box2">unendlich
+                <div class="box2">unendlich</div>
+            </div>
+        </div>
+        
+    </article>
+
+    
+    <div class="box4">sticky</div>
+    <div class="box"></div>
+
+    
+    
+</body>
+</html>
