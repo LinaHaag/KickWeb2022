@@ -234,7 +234,7 @@ body{
 .remember {
     position: sticky;
     display: inline-block;
-    padding-left: 12vw;
+    padding-left: 155px;
     padding-top: 200px;
     color: white;
     text-transform: uppercase;
@@ -246,8 +246,6 @@ body{
 
 .your {
     display: inline-block;
-    
-    
     padding-top: 200px;
     color: white;
     text-transform: uppercase;
