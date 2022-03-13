@@ -66,6 +66,8 @@ body{
     font-size: 22vw;
     line-height: 70%;
     font-weight: 600;
+
+    filter: blur(2px);
 }
   
 .orange {
@@ -148,6 +150,8 @@ body{
     width: 50vw;
     border-radius: 50%;
     mix-blend-mode: difference;
+
+    filter: blur(5px);
 }
 
 .kreisorange {
@@ -223,13 +227,15 @@ body{
     width: 26rem;
     border-radius: 20px;
     transform: rotate(-36deg) translate(1000px, -300px);
+    
 }
 
 
 .remember {
+    position: sticky;
     display: inline-block;
     padding-left: 12vw;
-    padding-top: 24vw;
+    padding-top: 200px;
     color: white;
     text-transform: uppercase;
     font-weight: 600;
@@ -240,9 +246,9 @@ body{
 
 .your {
     display: inline-block;
-    text-align: right;
-    padding-right: 12vw;
-    padding-top: 24vw;
+    
+    
+    padding-top: 200px;
     color: white;
     text-transform: uppercase;
     font-weight: 600;
@@ -253,9 +259,9 @@ body{
 
 .or{
 
-    display: inline-block;
-    text-align: right;
-    
+    display: block;
+    text-align: left;
+    padding-left: 640px;
     padding-top: 10px;
     color: white;
     text-transform: uppercase;
