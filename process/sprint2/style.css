@@ -83,7 +83,7 @@ body{
 
 .textmittelweiss{
     padding-left: 12vw;
-    padding-top: 20vh;
+    padding-top: 25vh;
     position: relative;
     color: white;
     font-size: 3rem;
@@ -144,10 +144,13 @@ body{
 
 .typ5{
     position: relative; 
+    margin-inline: 10vw; 
+    margin-top: 50vh;
+    margin-bottom: 40vh;
 }
 
 
-.typ5 > div {  
+/* .typ5 > div {  
     left: 0;
     right: 0; 
     margin-left: 10vw; 
@@ -155,76 +158,270 @@ body{
     width: auto;
     position: absolute; 
 
+} */
+
+.cigarette-container{
+    overflow: hidden;
+    position: relative;
 }
 
-.cigarette{
-    margin-top: 10px;
-    display: block;
+.typ5:hover .cigarette-container{
+    animation-name: cigarettewidth;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+
+}
+
+.cigarette, .forgot{
     text-transform: uppercase;
     color: black;
     font-weight: 600;
-    font-size: 3rem;
-    text-align: center;
+    font-size: 3.5vw;
+    white-space: nowrap;
+    padding:0.5vw; 
+    padding-left: 15vw;
+    display: block;
+    mix-blend-mode: none;
+    padding-top: 1.5vw;
+
+}
+
+.cigarette{
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    width: 100%;
+}
+
+
+.forgot{
+    position: absolute;
+    color: #FFA3FF;
+}
+
+.fire{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 3vw;
     background-color: #FFA3FF;
 }
 
-.forgot{
-    margin-top: 10px;
-    display: block;
-    text-transform: uppercase;
-    color: #FFA3FF;
-    font-weight: 600;
-    font-size: 3rem;
-    text-align: center;
-
+.filter{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 14vw;
+    background-color: #ffffff;
 }
 
 .box1{
     display: block;
     height: 2.5rem;
-    background-color: #FFA3FF;
+    background-color: #ffffff;
 }
 
-.fire{
-    display: inline-block;
-    height: 3rem;
-    width: 3rem;
-    color: #ff5c00;
+@keyframes cigarettewidth{
+    0% {
+        width:100%;
+    }
+    100% {
+        width: 0px;
+    }
 }
+
+
+.strophebox{
+    height: 60vh;
+    width: 100vw;
+}
+
+.strophe{
+    padding-left: 5vw;
+    padding-top: 2vh;
+    position: relative;
+    color: white;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    transition: all 2.5s;
+}
+
+.eins{
+    /* transform: translateX(-40vw); */
+    filter: blur(20px);
+    color: #ffffff;
+
+}
+
+.strophe:hover .eins {
+    /* transform: translateX(0vw); */
+    filter: blur(0px);
+    color: #ffffff;
+}
+
+.zwei{
+    /* transform: translateX(-40vw); */
+    filter: blur(20px);
+    color: #000000;
+
+}
+
+.strophe:hover .zwei {
+    /* transform: translateX(0vw); */
+    filter: blur(0px);
+    transition-delay: 2s;
+    color: #ffffff
+}
+
+.drei{
+    /* transform: translateX(-40vw); */
+    filter: blur(20px);
+    color: #000000;
+    font-size: 22vw;
+    text-transform: none;
+
+}
+
+.strophe:hover .drei {
+    /* transform: translateX(0vw); */
+    filter: blur(0px);
+    transition-delay: 4s;
+    color: #ffffff
+}
+
+.vier{
+    /* transform: translateX(-40vw); */
+    filter: blur(20px);
+    color: #000000;
+
+}
+
+.strophe:hover .vier {
+    /* transform: translateX(0vw); */
+    filter: blur(0px);
+    transition-delay: 6s;
+    color: #ffffff
+}
+
+.fuenf{
+    /* transform: translateX(-40vw); */
+    filter: blur(20px);
+    color: #000000;
+    padding-top: 8vh;
+
+}
+
+.strophe:hover .fuenf {
+    /* transform: translateX(0vw); */
+    filter: blur(0px);
+    transition-delay: 9s;
+    color: #ffffff
+}
+
+.sechs{
+    /* transform: translateX(-40vw); */
+    filter: blur(20px);
+    color: #000000;
+
+}
+
+.strophe:hover .sechs {
+    /* transform: translateX(0vw); */
+    filter: blur(0px);
+    transition-delay: 11s;
+    color: #ffffff
+}
+
+
+
 
 
 .kreis{
     position: relative; 
+    
 }
 
 .kreis > div {
     margin-left: 25vw; 
     position: absolute; 
-    height: 50vw;
-    width: 50vw;
     border-radius: 50%;
     mix-blend-mode: difference;
+    height: 50vw;
+    width: 50vw;
+    overflow: hidden;
 
-    filter: blur(5px);
+    transition: all 5s;
 }
 
 .kreisorange {
     background-color: #ff5c00;
     left: 0px;
     top: 0;
+    filter: blur(0px);
+    height: 50vw;
+    width: 50vw;
+    margin-left: 25vw; 
 }
-  
+
+.kreis:hover .kreisorange {
+    left: 0px;
+    top: 0;
+    filter: blur(20px);
+    height: 150vw;
+    width: 150vw;
+    margin-left: -25vw; 
+    margin-top: -25vw; 
+
+}
+
 .kreisgruen {
     background-color: #00ff00;
-    left: 1vw;
-    top: 1vw;
+    left: 0vw;
+    top: 0vw;
+    filter: blur(0px);
+    height: 50vw;
+    width: 50vw;
+    margin-left: 25vw; 
 }
-  
+
+.kreis:hover .kreisgruen {
+    left: -5vw;
+    top: 5vw;
+    filter: blur(20px);
+    height: 150vw;
+    width: 150vw;
+    margin-left: -25vw; 
+    margin-top: -25vw; 
+
+}
+
 .kreisblau {
     background-color: #0000ff;
-    left: 1vw;
-    top: -1vw;
+    left: 0vw;
+    top: 0vw;
+    filter: blur(0px);
+    height: 50vw;
+    width: 50vw;
+    margin-left: 25vw; 
 }
+
+.kreis:hover .kreisblau {
+    left: 5vw;
+    top: 5vw;
+    filter: blur(20px);
+    height: 150vw;
+    width: 150vw;
+    margin-left: -25vw; 
+    margin-top: -25vw; 
+
+}
+
+
 
 
 
@@ -251,7 +448,6 @@ body{
 }
 
 .typ7{
-
     background-color: #FFA3FF;
     margin: 0px;
     height: 53rem;
@@ -335,10 +531,12 @@ height: 700px;
     background-image: linear-gradient(#FFA3FF, #ffa3ffbd,#ffa3ff70, #ffa3ff00);
 }
 
+
+
 .artist{
     display: inline-block;
     padding-left: 12vw;
-    padding-top: 4px;
+    padding-top: 50vh;
     position: relative;
     color: white;
     font-size: 1rem;
