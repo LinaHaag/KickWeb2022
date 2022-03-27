@@ -17,9 +17,7 @@ body{
     padding: 0vw;
     z-index: 1;
     position: relative;
-    overflow: hidden;
-
-    
+    overflow: hidden;  
 
 }
 
@@ -146,7 +144,7 @@ body{
     position: relative; 
     margin-inline: 10vw; 
     margin-top: 50vh;
-    margin-bottom: 40vh;
+    margin-bottom: 45vh;
 }
 
 
@@ -375,7 +373,7 @@ body{
     height: 150vw;
     width: 150vw;
     margin-left: -25vw; 
-    margin-top: -25vw; 
+    margin-top: -50vw; 
 
 }
 
@@ -396,7 +394,7 @@ body{
     height: 150vw;
     width: 150vw;
     margin-left: -25vw; 
-    margin-top: -25vw; 
+    margin-top: -50vw; 
 
 }
 
@@ -417,10 +415,9 @@ body{
     height: 150vw;
     width: 150vw;
     margin-left: -25vw; 
-    margin-top: -25vw; 
+    margin-top: -50vw; 
 
 }
-
 
 
 
@@ -451,7 +448,11 @@ body{
     background-color: #FFA3FF;
     margin: 0px;
     height: 53rem;
+
+    transition: all 3s;
 }
+
+
 
 .xans{
     padding-left: 12vw;
@@ -463,22 +464,37 @@ body{
     line-height: 96%;
 }
 
-.xanax1{
+.xanax {
     background-color: white; 
-    height: 6rem;
-    width: 26rem;
+    height: 6vw;
+    width: 20vw;
     border-radius: 20px;
-    transform: rotate(24deg) translate(120px, -200px);
+    overflow: hidden;
+
+    transition: all 3s ease-out;
+    
+    transform-origin: 50%, 50%;
+    
+    /* rotate: rotate(-36deg); */
+}
+
+.xanax1{
+    transform: translate(-20vw, -65vh) rotate(50deg) ;
+}
+
+.typ7:hover .xanax1 {
+    transform: translate(60vw, -20vh) rotate(-23deg) ;
 }
 
 .xanax2{
-    background-color: white; 
-    height: 6rem;
-    width: 26rem;
-    border-radius: 20px;
-    transform: rotate(-36deg) translate(1000px, -300px);
-    
+    transform: translate(125vw, -95vh)  rotate(4deg);  
 }
+
+.typ7:hover .xanax2 {
+    transform: translate(5vw, -65vh) rotate(-110deg);
+}
+
+
 
 .typ8{
 background-color: #FFA3FF;
@@ -540,13 +556,40 @@ height: 700px;
     position: relative;
     color: white;
     font-size: 1rem;
+}
 
+.song{
+    display: inline-block;
+    padding-left: 12vw;
+    padding-top: 50vh;
+    position: relative;
+    color: white;
+    font-size: 1rem;
+
+    padding-left: 10px
 }
 
 .credits{
+    display: block;
     padding-left: 12vw;
     padding-top: 10px;
     position: relative;
     color: white;
     font-size: 1rem;
 }
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+
+a:hover {
+    color: #FFA3FF;
+}
+
+/* a:active {
+    color: #FFA3FF;
+} */
+
+
