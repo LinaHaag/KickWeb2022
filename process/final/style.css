@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+
+body{
+    margin: 0px;
+    font-size: 2rem;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: regular;
+    background-color: black;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+
+.typ1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFA3FF;
+    padding: 0vw;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;  
+
+}
+
+/* .pushing {
+    font-size: 2vw;
+    display: inline-block;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    transform-origin: top left;
+    transform: rotate(90deg) translate(120vh, -25vw);
+    position: sticky;
+} */
+
+
+.pushing {
+    font-size: 2vw;
+    display: inline-block;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    transform-origin: top left;
+    transform: rotate(90deg) translate(120vh, -25vw);
+    
+    
+    animation-name: pushingdown;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+
+} 
+
+@keyframes pushingdown {
+    0%{
+        transform: rotate(90deg) translate(0vh, -25vw);
+    }
+    100%{
+        transform: rotate(90deg) translate(120vh, -25vw);
+    }
+}
+
+
+.gross{
+    color: black;
+    letter-spacing: 0px;
+    font-size: 55vw;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    overflow: hidden;
+    bottom: -15vw;
+
+}
+
+.typ3{
+    height: 100vh;
+    width: 100vw;
+}
+
+.textmittelweiss{
+    padding-left: 12vw;
+    padding-top: 25vh;
+    position: relative;
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.typ4 {
+    padding-top: 15vw;
+    padding-left: 11vw;
+    position: relative;
+
+}
+  
+.hallu {
+    
+    mix-blend-mode: difference;
+    position: absolute;
+    font-size: 22vw;
+    line-height: 70%;
+    font-weight: 600;
+
+    transition: all 1.5s;
+
+    /*filter: blur(2px);*/
+
+}
+
+.orange{
+    color: #ff5c00;
+}
+
+.gruen{
+    color: #00ff00;
+}
+
+.blau{
+    color: #0000ff;
+}
+
+  
+.typ4:hover .orange {
+    transform: translateY(-0.5vw) translateX(-0.5vw);
+    filter: blur(2px);
+}
+  
+.typ4:hover .gruen {
+    transform: translateY(0vw) translateX(0vw);
+    filter: blur(2px);
+}
+  
+.typ4:hover .blau {
+    transform: translateY(0.5vw) translateX(0.5vw);
+    filter: blur(2px);
+}
+
+
+
+.typ5{
+    position: relative; 
+    margin-inline: 10vw; 
+    margin-top: 50vh;
+    margin-bottom: 45vh;
+}
+
+
+/* .typ5 > div {  
+    left: 0;
+    right: 0; 
+    margin-left: 10vw; 
+    margin-right: 10vw; 
+    width: auto;
+    position: absolute; 
+
+} */
+
+.cigarette-container{
+    overflow: hidden;
+    position: relative;
+}
+
+.typ5:hover .cigarette-container{
+    animation-name: cigarettewidth;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+
+}
+
+.cigarette, .forgot{
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    font-size: 3.5vw;
+    white-space: nowrap;
+    padding:0.5vw; 
+    padding-left: 15vw;
+    display: block;
+    mix-blend-mode: none;
+    padding-top: 1.5vw;
+
+}
+
+.cigarette{
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    width: 100%;
+}
+
+
+.forgot{
+    position: absolute;
+    color: #FFA3FF;
+}
+
+.fire{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 3vw;
+    background-color: #FFA3FF;
+}
+
+.filter{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 14vw;
+    background-color: #ffffff;
+}
+
+.box1{
+    display: block;
+    height: 2.5rem;
+    background-color: #ffffff;
+}
+
+@keyframes cigarettewidth{
+    0% {
+        width:100%;
+    }
+    100% {
+        width: 0px;
+    }
+}
+
+
+.strophebox{
+    height: 60vh;
+    width: 100vw;
+}
+
+.strophe{
+    padding-left: 5vw;
+    padding-top: 2vh;
+    position: relative;
+    color: white;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    transition: all 2s;
+}
+
+.eins{
+    /* transform: translateX(-40vw); */
+    filter: blur(20px);
+    color: #ffffff;
+
+}
+
+.strophe:hover .eins {
+    /* transform: translateX(0vw); */
+    filter: blur(0px);
+    color: #ffffff;
+}
+
+.zwei{
+    /* transform: translateX(-40vw); */
+    filter: blur(20px);
+    color: #000000;
+
+}
+
+.strophe:hover .zwei {
+    /* transform: translateX(0vw); */
+    filter: blur(0px);
+    transition-delay: 1s;
+    color: #ffffff
+}
+
+.drei{
+    /* transform: translateX(-40vw); */
+    filter: blur(20px);
+    color: #000000;
+    font-size: 22vw;
+    text-transform: none;
+
+}
+
+.strophe:hover .drei {
+    /* transform: translateX(0vw); */
+    filter: blur(0px);
+    transition-delay: 3s;
+    color: #ffffff
+}
+
+.vier{
+    /* transform: translateX(-40vw); */
+    filter: blur(20px);
+    color: #000000;
+
+}
+
+.strophe:hover .vier {
+    /* transform: translateX(0vw); */
+    filter: blur(0px);
+    transition-delay: 4s;
+    color: #ffffff
+}
+
+.fuenf{
+    /* transform: translateX(-40vw); */
+    filter: blur(20px);
+    color: #000000;
+    padding-top: 8vh;
+
+}
+
+.strophe:hover .fuenf {
+    /* transform: translateX(0vw); */
+    filter: blur(0px);
+    transition-delay: 6s;
+    color: #ffffff
+}
+
+.sechs{
+    /* transform: translateX(-40vw); */
+    filter: blur(20px);
+    color: #000000;
+
+}
+
+.strophe:hover .sechs {
+    /* transform: translateX(0vw); */
+    filter: blur(0px);
+    transition-delay: 7s;
+    color: #ffffff
+}
+
+
+
+.typ6rap{
+    overflow: hidden;
+    height: 100vh;
+    padding: 0;
+    position: relative;
+}
+
+.kreis{
+    position: absolute; 
+    height: 100vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.typ6-text {
+    position: absolute; 
+    left: 10vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.kreis > div {
+    /*margin-left: 25vw; */
+    position: absolute; 
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    height: 50vw;
+    width: 50vw;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    /* transition: all 5s; */
+}
+
+
+/* .kreisorange {
+    background-color: #ff5c00;
+    left: 0px;
+    top: 0;
+    filter: blur(0px);
+    height: 50vw;
+    width: 50vw;
+    margin-left: 25vw; 
+}
+
+.kreis:hover .kreisorange {
+    left: 0px;
+    top: 0;
+    filter: blur(20px);
+    height: 150vw;
+    width: 150vw;
+    margin-left: -25vw; 
+    margin-top: -50vw; 
+
+} */
+
+.kreisorange {
+    background-color: #ff5c00;
+    height: 50vw;
+    width: 50vw;
+    /*margin-left: 25vw; */
+
+    animation-name: uebergang1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes uebergang1 {
+    0%{
+        left: 0px;
+        top: 0;
+        filter: blur(0px);
+        transform: scale(100%);
+        
+    }
+    100%{
+        left: 0px;
+        top: 0;
+        filter: blur(10px);
+        transform: scale(250%);
+        
+    }
+} */
+
+/* .kreisgruen {
+    background-color: #00ff00;
+    left: 0vw;
+    top: 0vw;
+    filter: blur(0px);
+    height: 50vw;
+    width: 50vw;
+    margin-left: 25vw; 
+}
+
+.kreis:hover .kreisgruen {
+    left: -5vw;
+    top: 5vw;
+    filter: blur(20px);
+    height: 150vw;
+    width: 150vw;
+    margin-left: -25vw; 
+    margin-top: -50vw; 
+
+} */
+
+.kreisgruen {
+    background-color: #00ff00;
+    height: 50vw;
+    width: 50vw;
+    /*margin-left: 25vw; */
+
+    animation-name: uebergang2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes uebergang2 {
+    0%{
+        left: 0px;
+        top: 0;
+        filter: blur(0px);
+        transform: scale(100%);
+        
+    }
+    100%{
+        left: -5vw;
+        top: 5vw;
+        filter: blur(10px);
+        transform: scale(250%) ;
+        
+    }
+} */
+
+/* .kreisblau {
+    background-color: #0000ff;
+    left: 0vw;
+    top: 0vw;
+    filter: blur(0px);
+    height: 50vw;
+    width: 50vw;
+    margin-left: 25vw; 
+}
+
+.kreis:hover .kreisblau {
+    left: 5vw;
+    top: 5vw;
+    filter: blur(20px);
+    height: 150vw;
+    width: 150vw;
+    margin-left: -25vw; 
+    margin-top: -50vw; 
+
+} */
+
+.kreisblau {
+    background-color: #0000ff;
+    height: 50vw;
+    width: 50vw;
+    /*margin-left: 25vw; */
+
+    animation-name: uebergang3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes uebergang3 {
+    0%{
+        left: 0px;
+        top: 0;
+        filter: blur(0px);
+        transform: scale(100%);
+        
+    }
+    100%{
+        left: -5vw;
+        top: 5vw;
+        filter: blur(10px);
+        transform: scale(250%) ;
+        
+    }
+} */
+
+
+
+
+.drunken {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3rem;
+
+    filter: blur(2px);
+}
+
+.seattle {
+    color: #000000;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3rem;
+
+    filter: blur(0px);
+}
+
+.typ7{
+    background-color: #FFA3FF;
+    margin: 0px;
+    height: 53rem;
+    z-index: 1;
+
+    transition: all 3s;
+}
+
+
+
+.xans{
+    padding-left: 12vw;
+    padding-top: 8rem;
+    color: rgb(0, 0, 0);
+    font-size: 10rem;
+    text-transform: uppercase;
+    filter: blur(0px);
+    line-height: 96%;
+}
+
+.xanax {
+    background-color: white; 
+    height: 6vw;
+    width: 20vw;
+    border-radius: 20px;
+    overflow: hidden;
+
+    transition: all 3s ease-out;
+    
+    transform-origin: 50%, 50%;
+    
+    /* rotate: rotate(-36deg); */
+}
+
+.xanax1{
+    transform: translate(-20vw, -65vh) rotate(50deg) ;
+}
+
+.typ7:hover .xanax1 {
+    transform: translate(60vw, -20vh) rotate(-23deg) ;
+}
+
+.xanax2{
+    transform: translate(125vw, -95vh)  rotate(4deg);  
+}
+
+.typ7:hover .xanax2 {
+    transform: translate(5vw, -65vh) rotate(-110deg);
+}
+
+
+
+.typ8{
+    background-color: #FFA3FF;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 55vw 10vw 35vw;
+    grid-template-rows: repeat(4, 7vw);
+}
+
+.remember {
+
+    justify-self: end;
+    position: sticky;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3.5vw;
+
+    filter: blur(0px);
+}
+
+
+
+.your {
+    grid-area: 1/3;
+
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3.5vw;
+
+    filter: blur(0px);
+}
+
+.or{
+
+    display: block;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3.5vw;
+
+}
+
+.one{
+    justify-self: center;
+    grid-area: 2/2;
+    filter: blur(3px);
+}
+
+.two{
+    grid-area: 2/3 ;
+    filter: blur(3px);
+}
+ 
+.three{
+    justify-self: center;
+    grid-area: 3/2 ;
+    filter: blur(6px);
+}
+
+.fore{
+    grid-area: 3/3;
+    filter: blur(6px);
+}
+
+.five{
+    justify-self: center;
+    grid-area: 4/2 ;
+    filter: blur(9px);
+}
+
+.six{
+    grid-area: 4/3 ;
+    filter: blur(9px);
+} 
+
+/* .blur{
+    width: 100vw;
+    height: 50px;
+    background-image: linear-gradient(#FFA3FF, #ffa3ffbd,#ffa3ff70, #ffa3ff00);
+} */
+
+.blur{
+    width: 100vw;
+    height: 50px;
+    background-image: linear-gradient(#FFA3FF, #ffa3ffbd,#ffa3ff70, #ffa3ff00);
+}
+
+
+
+.artist{
+    display: inline-block;
+    padding-left: 12vw;
+    padding-top: 50vh;
+    position: relative;
+    color: white;
+    font-size: 1rem;
+}
+
+.song{
+    display: inline-block;
+    padding-left: 12vw;
+    padding-top: 50vh;
+    position: relative;
+    color: white;
+    font-size: 1rem;
+
+    padding-left: 10px
+}
+
+.credits{
+    display: block;
+    padding-left: 12vw;
+    padding-top: 10px;
+    position: relative;
+    color: white;
+    font-size: 1rem;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+
+a:hover {
+    color: #FFA3FF;
+}
+
+/* a:active {
+    color: #FFA3FF;
+} */
+
+
