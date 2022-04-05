@@ -36,7 +36,7 @@ body{
     color: #ff5c00;
 
     animation-name: up;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -45,7 +45,7 @@ body{
     color: #00ff00;
 
     animation-name: static;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     
@@ -55,7 +55,7 @@ body{
     color: #0000ff;
 
     animation-name: down;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }

@@ -338,6 +338,9 @@ body{
 }
 
 
+.lerraum{
+    height: 500px;
+}
 
 .typ6rap{
     overflow: hidden;
@@ -599,6 +602,11 @@ body{
     transform: translate(5vw, -65vh) rotate(-110deg);
 }
 
+.lerraumrosa {
+    height: 20vw; 
+    background-color: #FFA3FF;
+}
+
 
 
 .typ8{
@@ -693,6 +701,9 @@ body{
 }
 
 
+.lerraumklein{
+    height: 300px;
+}
 
 .artist{
     display: inline-block;
